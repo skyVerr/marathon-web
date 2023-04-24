@@ -1,0 +1,31 @@
+.title {
+  font-family: "Open Sans-SemiBold", sans-serif;
+  font-size: 26px;
+  color: var(--dark-grey);
+  margin: 12px 0;
+}
+
+.title2 {
+  font-family: "Open Sans-ExtraBold", sans-serif;
+  font-size: 20px;
+  color: var(--mid-grey);
+  margin: 12px 0;
+}
+
+@mixin regular-font() {
+  font-family: "Open Sans-Regular", sans-serif;
+  font-size: 14px;
+  color: var(--dark-grey);
+  margin: 12px 0;
+  font-weight: 700;
+}
+
+.subtitle {
+  @include regular-font;
+}
+
+.label {
+  @include regular-font;
+
+  text-align: right;
+}
