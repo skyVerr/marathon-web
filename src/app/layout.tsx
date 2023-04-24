@@ -14,7 +14,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={styles.window}>
-          {children}
+          <div className={styles.mainContainer}>
+            <div>test1</div>
+            <div>test1</div>
+            <div>test1</div>
+          </div>
         </div>
       </body>
     </html>
