@@ -3,13 +3,9 @@
     font-family: $font-name
     src: url("../../assets/font/" + $font-file)
    
- 
-
-@mixin open-sans($emphasis) 
+@mixin open-sans($emphasis)
   @include font("Open Sans-" + $emphasis, "open-sans/OpenSans-" + $emphasis + ".ttf")
- 
 
 $open-sans-emphasis: "Bold", "BoldItalic", "ExtraBold", "ExtraBoldItalic", "Italic", "Light", "LightItalic", "Regular", "Semibold"
 @each $emphasis in $open-sans-emphasis 
   @include open-sans($emphasis)
- 
